@@ -1,126 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Simon Weschle</title>
-	<meta charset="utf-8">
-	<meta name="Simon Weschle" content="Simon Weschle">
-	<meta name="description" content="Simon Weschle - Syracuse University"/>
+  <head>
+    <title>Simon Weschle &mdash; Data</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+    <header class="site-navbar py-3" role="banner">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">Simon&nbsp;<span class="text-primary">Weschle</span> </a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="workingpapers.html">Working Papers</a></li>
+                <li><a href="book.html">Book Project</a></li>
+                <li class="active"><a href="data.html">Data</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="cv.html">CV</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="site-header">
+      <div class="container">
+        <div class="mb-lg-0">
+          <h2><br/></h2>
+        </div>
+      </div>
+    </div>     
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="site-section-heading">
+              <h2>Data</h2>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200"><span class="text-uppercase text-primary">Quantified Political Relationships</a></span></div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <p>The <i>Quantified Political Relationships (QPR)</i> data provides a new comparative measure of cooperation and conflict in public relationships among politicians, non-partisan political actors, and societal actors. It uses more than 250,000 machine-coded events from 13 Western European countries from 2001 to 2014 and scales them using latent factor network models. This provides information on the degree of cooperation and conflict between almost 3,500 (aggregated) or more than 4,600 (non-aggregated) actors.</p>
+            <p>For details on the data and the approach, please see <a href="papers/2018_APSR.pdf" target="_blank">this paper</a> and the accompanying <a href="papers/2018_APSR_App.pdf" target="_blank">Online Appendix</a>. For an example how the QPR data can be useful, check out <a href="pub_bjps_2017.html" target="_blank">this paper</a>.  If you have any questions or find a mistake, please <a class="email" href="mailto:swweschl@maxwell.syr.edu">email</a> me.</p>
+            <p>If you use the data in your research, please cite the following:<br> Weschle, Simon (2018): "Quantifying Political Relationships." <i>American Political Science Review</i> 112(4): 1090-1095.</p>
+            <p>There are two versions of the data: In the first, I aggregate the events of all actors that are members of a political party together before estimating the cooperation scores. In the second, no aggregation by party takes place.</p>
+            <p><span><a href="https://www.dropbox.com/s/c71m7516vec9p7l/fulldata_agg.rda?raw=1" target="_blank">Data, Aggregated (R, 26 MB) &nbsp; &nbsp;</a></span></p>
+            <p><span><a href="https://www.dropbox.com/s/iml62xakpm03gsx/fulldata_agg.dta.zip?raw=1" target="_blank">Data, Aggregated (Stata, 35 MB)</a></span></p>
+            <p><span><a href="https://www.dropbox.com/s/hsuk66ogwyg2qxh/fulldata_nonagg.rda?raw=1" target="_blank">Data, Non-Aggregated (R, 45 MB) &nbsp; &nbsp;</a></span></p>
+            <p><span><a href="https://www.dropbox.com/s/i44fvp2bwdua24g/fulldata_nonagg.dta.zip?raw=1" target="_blank">Data, Non-Aggregated (Stata, 79 MB)</a></span></p>
+            <p><span><a href="https://www.dropbox.com/s/85flxbuqmxg9ooc/QPR_Codebook.pdf?raw=1" target="_blank">Codebook</a></span></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
 
-	<!-- CSS Files -->
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+      
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <h2 class="footer-heading text-uppercase mb-4">Address</h2>
+            <p>100 Eggers Hall</p>
+            <p>Syracuse University</p>
+            <p>Syracuse, NY 13244</p>
+          </div>
+          <div class="col-md-4 ml-auto">
+            <h2 class="footer-heading text-uppercase mb-4">Contact</h2>
+             <ul class="list-unstyled">
+              <li><a href="mailto:swweschl@maxwell.syr.edu">Email</a></li>
+              <li><a href="https://twitter.com/simonweschle"  target="_blank">Twitter</a></li>
+              <li><a href="https://scholar.google.com/citations?user=LbkgmxsAAAAJ&hl=en"  target="_blank">Google Scholar</a></li>
+            </ul>           
+          </div>
+        </div>
+        <div class="row">
+          
+            <div class="col-md-12 text-center">
+              <div class="border-top pt-5">
+              <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </div>
 
-    <!-- Javascript Files -->
-	<script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/slider.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-</head>
-<body>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
 
-	<!-- header Section -->
-	<header>
-		<div class="container">
-			
-			<!-- Logo  -->
-			<a href="#" class="logo">
-				<img src="img/logo.png" alt="Heros"/>
-			</a>
-
-			<!-- Navigation Menu  -->
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="publications.html">Publications</a></li>
-					<li><a href="workingpapers.html">Working Papers</a></li>
-					<li><a href="bookproject.html">Book Project</a></li>
-					<li><a href="data.html" class="selected">Data</a></li>
-					<li><a href="teaching.html">Teaching</a></li>
-					<li><a href="cv.html">CV</a></li>
-				</ul>
-			</nav>
-
-		</div>
-	</header><!-- end header -->
-
-
-	<!-- Services Section -->
-	<section class="services container clearfix">
-			
-			<!-- Services Title  -->
-			<div class="section_title animated wow fadeInUp">
-				<h2>Quantified Political Relationships.</h2>
-			</div>
-
-			<!-- Services List  -->
-			<div class="services_list">
-				<p>The <i>Quantified Political Relationships (QPR)</i> data provides a new comparative measure of cooperation and conflict in public relationships among politicians, non-partisan political actors, and societal actors. It uses more than 250,000 machine-coded events from 13 Western European countries from 2001 to 2014 and scales them using latent factor network models. This provides information on the degree of cooperation and conflict between almost 3,500 (aggregated) or more than 4,600 (non-aggregated) actors.</p> 
-
-				<p>For details on the data and the approach, please see my paper <a href="papers/2018_APSR.pdf" target="_blank">Quantifying Political Relationships</a> and the accompanying <a href="papers/2018_APSR_App.pdf" target="_blank">Online Appendix</a>. For an example how the QPR data can be useful, check out <a href="pub_bjps_2017.html" target="_blank">this paper</a>.  If you have any questions or find a mistake, please <a class="email" href="mailto:swweschl@maxwell.syr.edu">email</a> me.</p>
-
-				<p>If you use the data in your research, please cite the following:<br> Weschle, Simon (2018): "Quantifying Political Relationships." <i>American Political Science Review</i> 112(4): 1090-1095.</p>
-
-				<p>There are two versions of the data: In the first, I aggregate the events of all actors that are members of a political party together before estimating the cooperation scores. In the second, no aggregation by party takes place. </p>
-
-				<a href="https://www.dropbox.com/s/43vqywe0cwvun2r/QPR_Codebook.pdf?raw=1" target="_blank">  <span class="pdf">&nbsp; &nbsp; </span> Codebook </a> <br/>
-				<a href="https://www.dropbox.com/s/c71m7516vec9p7l/fulldata_agg.rda?raw=1" target="_blank">  <span class="table">&nbsp; &nbsp; </span> Data, Aggregated (R, 26 MB) </a>
-				<a href="https://www.dropbox.com/s/iml62xakpm03gsx/fulldata_agg.dta.zip?raw=1" target="_blank"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="table">&nbsp; &nbsp; </span> Data, Aggregated (Stata, 35 MB) </a> <br/>
-				<a href="https://www.dropbox.com/s/hsuk66ogwyg2qxh/fulldata_nonagg.rda?raw=1" target="_blank">  <span class="table">&nbsp; &nbsp; </span> Data, Non-Aggregated (R, 45 MB) </a>
-				<a href="https://www.dropbox.com/s/i44fvp2bwdua24g/fulldata_nonagg.dta.zip?raw=1" target="_blank"> &nbsp; &nbsp; &nbsp; &nbsp; <span class="table">&nbsp; &nbsp; </span> Data, Non-Aggregated (Stata, 79 MB) </a>				
-			</div>
-
-	</section><!-- end services -->
-
-
-
-
-	<!-- Footer Section -->
-	<footer class="clearfix">
-		<div class="container">
-			
-			<!-- Copyrights  -->
-			<div class="copyright animated wow fadeInUp">
-				<img src="img/logosmall.png" alt="Simon Weschle." class="footer_logo">
-				<p>Website based on a template by <a href="http://pixelhint.com">Pixelhint.com</a></p>
-			</div>
-			
-			<div class="footer_links">
-
-				<!-- Social Media Links  -->
-				<div class="sm columns animated wow fadeInRight" data-wow-delay=".2s">
-					<h3 class="columns_title">Contact</h3>
-					<ul>
-						<li>
-							<a class="email" href="mailto:swweschl@maxwell.syr.edu">Email</a>
-						</li>
-						<li>
-							<a class="twitter" href="https://twitter.com/simonweschle" target="_blank" >Twitter</a>
-						</li>
-						<li>
-							<a class="google" href="https://scholar.google.com/citations?user=LbkgmxsAAAAJ&hl=en" target="_blank" >Google Scholar</a>
-						</li>
-					</ul>
-				</div>
-
-
-				<!-- Address  -->
-				<div class="address columns animated wow fadeInRight" data-wow-delay=".4s">
-					<h3 class="columns_title">Address</h3>
-					<p>100 Eggers Hall</p>
-					<p>Syracuse University</p>
-					<p>Syracuse, NY 13244</p>
-					<p class="phone">(315) 443-2416</p>
-				</div>
-
-			</div>
-
-		</div>
-
-	</footer><!-- end footer -->
-
-	<script src='../ga.js'></script>
-
-</body>
+  <script src="js/main.js"></script>
+    
+  </body>
 </html>
