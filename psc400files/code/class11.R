@@ -29,16 +29,14 @@ rm(list=ls(all=TRUE))
 facedata <- read.csv("~/Dropbox/Teaching/2021_PSC_400/classes/week_6/data/face.csv")
 
 facedata$d.share <- facedata$d.votes/(facedata$d.votes + facedata$r.votes)
-facedata$r.share <- facedata$r.votes/(facedata$d.votes + facedata$r.votes)
-facedata$diff.share <- facedata$d.share - facedata$r.share
 
-plot(facedata$d.comp, facedata$diff.share, pch=16, xlab="Competence Score for Democrats", ylab="Democratic Margin in Vote Share")
+plot(facedata$d.comp, facedata$d.share, pch=16, xlab="Competence Score for Democrats", ylab="Democratic Vote Share")
 
-cor(facedata$d.comp, facedata$diff.share)
+cor(facedata$d.comp, facedata$d.share)
 
 
 
-reg1 <- lm(diff.share ~ d.comp, data=facedata)
+reg1 <- lm(d.share ~ d.comp, data=facedata)
 reg1
 
 coef(reg1)
@@ -46,7 +44,7 @@ coef(reg1)[1]
 coef(reg1)[2]
 
 
-plot(facedata$d.comp, facedata$diff.share, pch=16, xlab="Competence Score for Democrats", ylab="Democratic Margin in Vote Share")
+plot(facedata$d.comp, facedata$d.share, pch=16, xlab="Competence Score for Democrats", ylab="Democratic Vote Share")
 abline(reg1, col="red", lwd=3)
 
 
