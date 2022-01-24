@@ -1,47 +1,30 @@
-
-### Class Code from Feb 8
-
-
-# some basic math operations
-4 + 5
-
-sqrt(4)
-
-4 ^ 6
+### PSC 400, Fall 2022
+### Week 1, Monday 1/24
 
 
-# creating an object
-result <- 5 + 3 
-result
+# clear everything in the workspace. put this at the beginning of ALL your code files
+rm(list=ls(all=TRUE))
 
-# overwriting an object
-result <- 5 - 3
 
-# objects can be text
-instructor <- "Prof. Weschle"
+# Tutorial
+install.packages("remotes")
+  # if it asks you a question, type Y and hit enter
 
-result2 <- "5 + 3"
+install.packages("rmarkdown")
 
 
 
-## World Population as a vector
-world.pop <- c(2525779, 3026003, 3691173, 4449049, 5320817, 6127700, 6916183)
+# execute one by one -- if it asks to update packages, enter 1
+remotes::install_github("kosukeimai/qss-package", build_vignettes = TRUE)
+remotes::install_github("rstudio/learnr")
+remotes::install_github("rstudio-education/gradethis")
+remotes::install_github("mattblackwell/qsslearnr")
 
-# accessing elements in a vector
-world.pop[1]
-world.pop[6]
-world.pop[c(2,5)]
-world.pop[c(5, 2)]
-world.pop[-1]
-
-
-# create a new object that gives world population in million
-pop.million <- world.pop / 1000
+# start the tutorial
+learnr::run_tutorial("00-intro", package = "qsslearnr")
+# when done, click on "Stop" sign in "Jobs"
 
 
-# functions: min, max, mean
-min(pop.million)
-max(pop.million)
-mean(pop.million)
+
 
 
