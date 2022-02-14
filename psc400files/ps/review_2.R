@@ -27,9 +27,9 @@ rm(list=ls(all=TRUE))
 
 # load the star.csv data
 
-# Try to calculate the mean of the g4math variable in the star data frame without setting na.rm.
+# Try to calculate the mean of the math variable in the star data frame without setting na.rm.
 
-# Try to calculate the mean of the g4math variable with setting na.rm.
+# Try to calculate the mean of the math variable with setting na.rm.
 
 # Use the table function to create a vector of counts (called classcounts) for each category of the classtype in the star data.
 
