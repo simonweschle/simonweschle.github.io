@@ -9,7 +9,7 @@
 # load the star.csv data
 
 
-# Create a scatter plot with g4math on the x-axis and g4reading on the y-axis, Make the scatter plot nice in the ways discussed in class.
+# Create a scatter plot with math on the x-axis and reading on the y-axis, Make the scatter plot nice in the ways discussed in class.
 
 # Use the abline function to add a vertical line at the mean of the math variable. Remember, there are missing values in that variable so be sure to use the na.rm = TRUE argument to drop them.
 
@@ -20,7 +20,7 @@
 
 
 
-# Create a scatter plot with g4math on the x-axis and g4reading on the y-axis, but only for students where classtype is regular (plot those points in black). Make the scatter plot nice in the ways discussed in class
+# Create a scatter plot with math on the x-axis and reading on the y-axis, but only for students where classtype is regular (plot those points in black). Make the scatter plot nice in the ways discussed in class
 
 # add, in red, the points for students where classtype is small
 
