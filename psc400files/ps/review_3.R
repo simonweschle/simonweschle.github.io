@@ -14,7 +14,7 @@
 # Use the abline function to add a vertical line at the mean of the math variable. Remember, there are missing values in that variable so be sure to use the na.rm = TRUE argument to drop them.
 
 
-# Use the text function to add "Average Math Score" to the plot at the point (x=750, 0.014)
+# Use the text function to add "Average Math Score" to the plot at the point x=640, y=540
 
 # Add a horizontal line at the mean of the reading variable.
 
