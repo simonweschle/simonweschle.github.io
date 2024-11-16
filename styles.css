@@ -33,12 +33,16 @@ header p {
     color: #555555;
 }
 
+* Navigation Bar */
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
     justify-content: center;
-    gap: 2em;
+    gap: 1em; /* Adds space between items */
     margin-top: 1.5em;
+    padding: 0 1em; /* Prevents items from being cut off on small screens */
+    overflow: hidden; /* Ensures no items overflow */
 }
 
 nav ul li {
@@ -50,6 +54,7 @@ nav ul li a {
     color: #000000;
     font-weight: bold;
     font-size: 1.1em;
+    padding: 0.5em 1em; /* Adds clickable area */
     transition: color 0.3s ease-in-out;
 }
 
@@ -57,10 +62,23 @@ nav ul li a:hover {
     color: #007acc; /* Accent color for hover state */
 }
 
+/* Responsive Header for Small Screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation vertically on small screens */
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 1em; /* Slightly smaller text for mobile */
+        padding: 0.5em; /* Adjust spacing for better fit */
+    }
+}
+
 /* Section Styling */
 section {
     padding: 4em 1em;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     text-align: left;
 }
@@ -93,7 +111,7 @@ section ul li {
     flex-direction: column; /* Stack content vertically */
     gap: 2em;
     padding: 2em;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
 }
 
