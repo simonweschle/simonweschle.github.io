@@ -181,3 +181,8 @@ li br {
 }
 
 
+.pub-title {
+    color: rgb(0,122,204);
+    font-size: 0.95rem;   /* adjust as needed */
+}
+
