@@ -103,6 +103,18 @@ section ul {
 
 section ul li {
     margin-bottom: 0.8em;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 0.8em;
+}
+
+section ul li:last-child {
+    border-bottom: none;
+}
+
+section ul + h3 {
+    border-top: 1px solid #cccccc;
+    padding-top: 1em;
+    margin-top: 0.5em;
 }
 
 /* Home Page Layout */
