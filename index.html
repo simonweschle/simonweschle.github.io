@@ -11,7 +11,7 @@
         <h1>Simon Weschle</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="work-in-progress.html">Work in Progress</a></li>
                 <li><a href="teaching.html">Teaching</a></li>
@@ -21,15 +21,14 @@
     </header>
 
     <section id="index">
-        <h2>Welcome!</h2>
-
-        <div class="profile-picture">
-            <!-- Replace "your-photo.jpg" with the actual file name -->
-            <img src="images/headshot.jpg" alt="Picture of Simon Weschle">
-        </div>  <br>  
-
-        <p>I am an Associate Professor in the <a href="https://politicalscience.unc.edu/" target="_blank">Department of Political Science</a> at the <a href="https://www.unc.edu/" target="_blank">University of North Carolina at Chapel Hill</a>. I study democratic representation and accountability, and factors that impede it.</p>
-
+        <div class="home-layout">
+            <div class="profile-picture">
+                <img src="images/headshot.jpg" alt="Picture of Simon Weschle">
+            </div>
+            <div class="home-bio">
+                <p>I am an Associate Professor in the <a href="https://politicalscience.unc.edu/" target="_blank">Department of Political Science</a> at the <a href="https://www.unc.edu/" target="_blank">University of North Carolina at Chapel Hill</a>. I study democratic representation and accountability, and factors that impede it.</p>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -40,5 +39,6 @@
         </p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

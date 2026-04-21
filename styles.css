@@ -90,7 +90,10 @@ section h2 {
     color: #000000;
 }
 
-section p,
+section p {
+    font-size: 0.9em;
+}
+
 section ul {
     font-size: 1em;
     color: #333333;
@@ -195,6 +198,70 @@ li br {
 
 .pub-title {
     color: rgb(0,122,204);
-    font-size: 0.95rem;   /* adjust as needed */
+    font-size: 0.9em;
+}
+
+/* Home page side-by-side layout */
+.home-layout {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.home-layout .profile-picture {
+    flex: 0 0 250px;
+}
+
+.home-layout .profile-picture img {
+    max-width: 250px;
+}
+
+.home-bio {
+    flex: 1;
+    padding-top: 0.3em;
+}
+
+@media (max-width: 600px) {
+    .home-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-layout .profile-picture {
+        flex: 0 0 auto;
+    }
+}
+
+/* Active nav link */
+nav ul li a.active {
+    color: #007acc;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 0.1em;
+}
+
+/* Abstract toggles */
+.abstract-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    color: rgb(140,140,145);
+    cursor: pointer;
+    font-size: 0.85em;
+    font-family: inherit;
+}
+
+.abstract-toggle:hover {
+    color: #555;
+}
+
+.abstract-text {
+    display: none;
+    font-size: 0.85em;
+    color: #444;
+    margin-top: 0.3em;
+    line-height: 1.6;
+}
+
+.abstract-text.open {
+    display: block;
 }
 
