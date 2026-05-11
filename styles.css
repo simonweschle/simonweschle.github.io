@@ -33,7 +33,7 @@ header p {
     color: #555555;
 }
 
-* Navigation Bar */
+/* Navigation Bar */
 nav ul {
     list-style: none;
     display: flex;
@@ -120,16 +120,6 @@ section ul + h3 {
     margin-top: 0.5em;
 }
 
-/* Home Page Layout */
-.home-container {
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    gap: 2em;
-    padding: 2em;
-    max-width: 800px;
-    margin: auto;
-}
-
 /* Profile Picture (Centered) */
 .profile-picture {
     text-align: center; /* Centers the photo */
@@ -142,24 +132,6 @@ section ul + h3 {
     object-fit: cover; /* Ensures the image fills the square without distortion */
     border-radius: 0; /* Remove circular styling */
     display: inline-block; /* Centered within text-align */
-}
-
-/* Intro Text (Left-Aligned) */
-.intro-text {
-    text-align: left; /* Ensures the text remains left-aligned */
-    padding: 0 1em;
-}
-
-.intro-text h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
-    color: #000000;
-}
-
-.intro-text p {
-    font-size: 1.0em;
-    color: #333333;
-    margin-bottom: 1.5em;
 }
 
 /* Footer */
@@ -245,7 +217,6 @@ nav ul li a.active {
     padding: 0;
     color: rgb(140,140,145);
     cursor: pointer;
-    font-size: 0.85em;
     font-family: inherit;
 }
 
