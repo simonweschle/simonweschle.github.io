@@ -215,6 +215,7 @@ nav ul li a.active {
     background: none;
     border: none;
     padding: 0;
+    margin-right: 0.4em;
     color: rgb(140,140,145);
     cursor: pointer;
     font-family: inherit;
@@ -226,7 +227,7 @@ nav ul li a.active {
 
 .abstract-text {
     display: none;
-    font-size: 0.85em;
+    font-size: 0.78em;
     color: #444;
     margin-top: 0.3em;
     line-height: 1.6;
