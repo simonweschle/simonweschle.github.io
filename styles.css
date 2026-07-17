@@ -127,9 +127,7 @@ section ul + h3 {
 .profile-picture img {
     max-width: 300px; /* Set a fixed maximum width */
     width: 100%; /* Ensure responsiveness */
-    height: auto; /* Maintain aspect ratio until we enforce square */
-    aspect-ratio: 1 / 1; /* Enforces square dimensions */
-    object-fit: cover; /* Ensures the image fills the square without distortion */
+    height: auto; /* Scales to preserve the image's natural aspect ratio */
     border-radius: 0; /* Remove circular styling */
     display: inline-block; /* Centered within text-align */
 }
@@ -173,6 +171,35 @@ li br {
     font-size: 0.9em;
 }
 
+/* Publication entry with cover thumbnail */
+.pub-entry {
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.pub-cover {
+    flex: 0 0 60px;
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #dddddd;
+    background-color: #f5f5f5;
+}
+
+.pub-content {
+    flex: 1;
+    min-width: 0;
+}
+
+@media (max-width: 500px) {
+    .pub-cover {
+        flex-basis: 45px;
+        width: 45px;
+        height: 60px;
+    }
+}
+
 /* Home page side-by-side layout */
 .home-layout {
     display: flex;
@@ -181,11 +208,11 @@ li br {
 }
 
 .home-layout .profile-picture {
-    flex: 0 0 250px;
+    flex: 0 0 480px; /* photo takes up most of the row; bio column narrows to suit */
 }
 
 .home-layout .profile-picture img {
-    max-width: 250px;
+    max-width: 480px;
 }
 
 .home-bio {
